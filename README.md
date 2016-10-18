@@ -3,15 +3,9 @@ Add Text to Image
 
 A simple service that adds text to an image.
 
-## API
+## Parameters
 
-````
-GET /
-````
-
-With the following parameters:
-
-| Parameter | Type   | Required? | Description |
+| Name      | Type   | Required? | Description |
 |-----------|--------|-----------|-------------|
 | `image`   | string | required  | The URL of the image that needs text added. |
 | `text`    | string | required  | The text to add to the image. |
