@@ -18,6 +18,7 @@ With the following parameters:
 | `x`       | number | optional  | The x offset of the text from the left. Defaults to 0. |
 | `y`       | number | optional  | The y offset of the text from the top. Defaults to 0. |
 | `color`   | number | optional  | The text color. Defaults to #111111 (off-black). |
+| `size`    | number | optional  | The font size of the text. Defaults to 30. |
 
 ## Contributors
 

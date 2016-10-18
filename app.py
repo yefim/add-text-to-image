@@ -18,6 +18,7 @@ def index():
     x = request.args.get('x', 0, type=int)
     y = request.args.get('y', 0, type=int)
     color = request.args.get('color', '#111111')
+    size = request.args.get('size', 30, type=int)
 
     with Drawing() as draw:
         """
@@ -40,7 +41,7 @@ def index():
         """
 
         draw.font_family = 'Helvetica'
-        draw.font_size = 30
+        draw.font_size = size
         draw.fill_color = Color(color)
         draw.gravity = 'north_west'
         draw.text(x, y, text)
