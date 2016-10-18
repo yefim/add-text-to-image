@@ -14,6 +14,8 @@ app.config.from_object(__name__)
 def index():
     url = request.args['image']
     text = request.args['text']
+    x = request.args.get('x', 0, type=int)
+    y = request.args.get('y', 0, type=int)
 
     with Drawing() as draw:
         """
@@ -37,7 +39,7 @@ def index():
 
         draw.font_size = 30
         draw.gravity = 'north_west'
-        draw.text(0, 0, text)
+        draw.text(x, y, text)
         response = urlopen(url)
 
         try:

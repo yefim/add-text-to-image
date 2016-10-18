@@ -14,7 +14,9 @@ With the following parameters:
 | Parameter | Type   | Required? | Description |
 |-----------|--------|-----------|-------------|
 | `image`   | string | required  | The URL of the image that needs text added. |
-| `text`    | number | required  | The text to add to the image. |
+| `text`    | string | required  | The text to add to the image. |
+| `x`       | number | optional  | The x offset of the text from the left. Defaults to 0. |
+| `y`       | number | optional  | The y offset of the text from the top. Defaults to 0. |
 
 ## Contributors
 
