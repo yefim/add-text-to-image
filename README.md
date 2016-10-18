@@ -1,6 +1,8 @@
 Add Text to Image
 ==================
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 A simple service that adds text to an image.
 
 ## Parameters

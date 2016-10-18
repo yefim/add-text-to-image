@@ -1,0 +1,5 @@
+{
+  "name": "Add Text to Image",
+  "description": "A service that adds the specified text to an image.",
+  "keywords": ["imagemagick", "service", "text", "image"]
+}
