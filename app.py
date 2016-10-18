@@ -4,6 +4,7 @@ from tempfile import NamedTemporaryFile
 from urllib2 import urlopen
 from wand.drawing import Drawing
 from wand.image import Image
+from wand.color import Color
 
 
 app = Flask(__name__)
@@ -16,6 +17,7 @@ def index():
     text = request.args['text']
     x = request.args.get('x', 0, type=int)
     y = request.args.get('y', 0, type=int)
+    color = request.args.get('color', '#111111')
 
     with Drawing() as draw:
         """
@@ -37,7 +39,9 @@ def index():
         text_under_color
         """
 
+        draw.font_family = 'Helvetica'
         draw.font_size = 30
+        draw.fill_color = Color(color)
         draw.gravity = 'north_west'
         draw.text(x, y, text)
         response = urlopen(url)
