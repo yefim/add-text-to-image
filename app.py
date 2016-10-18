@@ -51,6 +51,16 @@ def index():
             response.close()
 
 
+@app.errorhandler(400)
+def bad_request(error):
+    return send_file('placeholder.png')
+
+
+@app.errorhandler(500)
+def server_error(error):
+    return send_file('placeholder.png')
+
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
