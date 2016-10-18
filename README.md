@@ -1,7 +1,7 @@
 Add Text to Image
 ==================
 
-Pretty self-explanatory.
+A simple service that adds text to an image.
 
 ## API
 
